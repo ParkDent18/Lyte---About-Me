@@ -1,7 +1,25 @@
-.section1 {
-    border: 5px solid black;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
+header,
+nav,
+footer {
     background-color: beige;
+    color: 498249;
+    text-align: center;
+    width: 100%;
+}
+
+.main {
+    background-color: 8C8585;
+    color: 000000;
+}
+
+.section {
+    background-color: beige;
+    color: 498249;
+    text-align: left;
+    width: 100%;
+}
+
+.centerContent {
+    
+    text-align: center;
 }
