@@ -1,0 +1,25 @@
+header,
+nav,
+footer {
+    background-color: solid beige;
+    color: solid 498249;
+    text-align: center;
+    width: 100%;
+}
+
+.main {
+    background-color: solid 8C8585;
+    color: 000000;
+}
+
+.section {
+    background-color: solid beige;
+    color: solid 498249;
+    text-align: left;
+    width: 100%;
+}
+
+.centerContent {
+    align-content: center;
+    text-align: center;
+}
