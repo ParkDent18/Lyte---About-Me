@@ -8,14 +8,11 @@ footer {
     height: auto;
 }
 
-body {
+main {
+    background-color: #00420D;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-main {
-    background-color: #00420D;
 }
 
 section {
