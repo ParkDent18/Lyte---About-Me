@@ -45,3 +45,8 @@ section {
     color: white; 
     border-radius: 8px; 
 }
+
+.bold {
+    color: #00420D;
+    letter-spacing: 0.5;
+}
