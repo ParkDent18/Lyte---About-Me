@@ -18,11 +18,11 @@ main {
     background-color: #00420D;
 }
 
-section {
+.section {
     border: 1px black;
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: fit-content;
     background: white;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -49,4 +49,10 @@ section {
 .bold {
     color: #00420D;
     letter-spacing: 0.5;
+}
+
+.imgs {
+    width: 500;
+    height: 500;
+    padding: 8;
 }

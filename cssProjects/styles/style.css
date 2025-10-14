@@ -39,6 +39,8 @@ button {
 
 .btn-hover:hover {
     background: lightskyblue;
+    color: #4E342E;
+    
 }
 
 .btn-glow {
