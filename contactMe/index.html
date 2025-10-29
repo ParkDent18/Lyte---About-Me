@@ -1,154 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDC | Contact </title>
-    <link rel="icon" type="image/x-icon" href="Images/Favicon-1.png">
+    <link rel="icon" type="image/x-icon" href="images/Favicon-1.png">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-
-
-<header>
-    <h2>
-    Contact Me
-    </h2>
-    <nav>
-        <a href="../index.html" target="_blank"> About Me </a>
-        <a href="../cssProjects/index.html" target="_blank"> CSS Projects </a>
-        <a href="https://google.com" target="_blank"> Google</a>
-    </nav>
-</header>
-
-<main>
 <body>
-    <section>
+    <header>
         <h2>
-            Introduction To The Page
+            Contact Me
         </h2>
-        <p>
-            This Is The Wireframe Of A Contact Page.
-            This Doesn't Actually Work.
-        </p>
-    </section>
+        <nav>
+            <a href="../index.html" target="_blank"> About Me </a>
+            <a href="../cssProjects/index.html" target="_blank"> CSS Projects </a>
+            <a href="https://google.com" target="_blank"> Google</a>
+        </nav>
+    </header>
 
-    <section>
-        <form>
+    <main>
+        <section>
             <h2>
-                Contact Me
+                Introduction To The Page
             </h2>
-        <!-- Asking User For Their Name ~ Required -->
-            <label for="name"> Name: </label>
-            <input type="text" id="name" placeholder="Enter Name Here" required>
+            <p>
+                This Is The Wireframe Of A Contact Page.
+                This Doesn't Actually Work.
+            </p>
+        </section>
 
-        <!-- Asking User For Their Email ~ Required -->
-            <label for="email"> Email: </label>
-            <input type="email" id="email" placeholder="Enter Email Here" required>
+        <section>
+              <form class="contact-form" id="contactForm">
+    <h2>Contact Me</h2>
 
-        <!-- Asking User For Their Password ~ Not Required -->
-            <label for="password"> Password: </label>
-            <input type="password" id="password" placeholder="Enter Password Here">
+    <!-- Basic Inputs -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Your Name" required>
 
-        <!-- Asking User For Their Phone Number -->
-            <label for="phone"> Phone Number: </label>
-            <input type="tel" id="phone" placeholder="Enter Phone Number Here" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Your Email" required>
 
-        <!-- Asking User For Their Website -->
-            <label for="website"> Website: </label>
-            <input type="url" id="phone" placeholder="Enter Website Here" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter a password">
 
-        <!-- Asking User For Their Age -->
-            <label for="age"> Age: </label>
-            <input type="number" id="age" min="1" max="120" placeholder="Enter Your Age Here" required>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" placeholder="(123) 456-7890">
 
-        <!-- Asking User For Their Date Of Birth -->
-            <label for="dob"> Date Of Birth: </label>
-            <input type="date" id="dob" required>
+    <label for="website">Website:</label>
+    <input type="url" id="website" placeholder="https://example.com">
 
-        <!-- Asking User For Preferred Contact Time -->
-            <label for="time"> Preferred : </label>
-            <input type="time" id="time" >
+    <label for="age">Age:</label>
+    <input type="number" id="age" min="1" max="120" placeholder="Your Age">
 
-        <!-- Asking User For Their Favorite Color -->
-            <label for="color"> Favorite Color: </label>
-            <input type="color" id="color" value="007bff">
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob">
 
-        <!-- Asking User For Age -->
-            <label for="range"> Interest Level (1-10): </label>
-            <input type="range" id="range" min="1" max="10" placeholder="Enter Your Interest Level Here" required>
+    <label for="time">Preferred Contact Time:</label>
+    <input type="time" id="time">
 
-        <!-- Radio Buttons -->
-            <label>
-                Preferred Contact Method: 
-            </label>
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" value="#007bff">
 
-            <div class="inline-options">
-            <!-- Checkbox For Email -->
-                <label>
-                    <input type="radio" name="contactMethod" value="Email" checked>
-                    Email
-                </label>
+    <label for="range">Interest Level (1–10):</label>
+    <input type="range" id="range" min="1" max="10" value="5">
 
-            <!-- Checkbox For Phone -->
-                <label>
-                    <input type="radio" name="contactMethod" value="Phone">
-                    Phone
-                </label>
+    <!-- Radio Buttons -->
+    <label>Preferred Contact Method:</label>
+    <div class="inline-options">
+      <label><input type="radio" name="contactMethod" value="Email" checked> Email</label>
+      <label><input type="radio" name="contactMethod" value="Phone"> Phone</label>
+      <label><input type="radio" name="contactMethod" value="Text"> Text</label>
+    </div>
 
-            <!-- Checkbox For Text -->
-                <label>
-                    <input type="radio" name="contactMethod" value="Text">
-                    Text
-                </label>
-            </div>
+    <!-- Checkbox -->
+    <label>Services Interested In:</label>
+    <div class="inline-options">
+      <label><input type="checkbox" name="service" value="Web Design"> Web Design</label>
+      <label><input type="checkbox" name="service" value="Consulting"> Consulting</label>
+      <label><input type="checkbox" name="service" value="Other"> Other</label>
+    </div>
 
-            <!-- Checkboxes -->
-            <label>
-                Servies Interested In:
-            </label>
+    <!-- Select Dropdown -->
+    <label for="topic">Topic:</label>
+    <select id="topic">
+      <option value="General">General Inquiry</option>
+      <option value="Support">Support</option>
+      <option value="Feedback">Feedback</option>
+    </select>
 
-            <div class="inline-options">
-            <!-- Checkbox For Web Design -->
-                <label>
-                    <input type="checkbox" name="service" value="Web Design">
-                    Web Design
-                </label>
+    <!-- Textarea -->
+    <label for="message">Message:</label>
+    <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
 
-            <!-- Checkbox For Consulting -->
-                <label>
-                    <input type="checkbox" name="service" value="Consulting">
-                    Consulting
-                </label>
-
-            <!-- Checkbox For Other -->
-                <label>
-                    <input type="checkbox" name="service" value="Other">
-                    Other
-                </label>
-            </div>
-
-            <!-- Select Dropdown -->
-            <label for="topic"> Topic: </label>
-            <select id="topic">
-                <option value="General"> General Inquiry </option>
-                <option value="Support"> Support </option>
-                <option value="Feedback"> Feedback </option>
-            </select>
-
-            <!-- Text Area -->
-            <label for="message"> Message: </label>
-            <textarea id="message" rows="4" placeholder="Enter Your Message" required></textarea>
-
-            <!-- Submit Button -->
-            <button type="submit"> Submit </button>
-        </form>
-    </section>
+    <!-- Submit Button -->
+    <button type="submit">Send</button>
+  </form>
+        </section>
+    </main>
+    <footer>
+        Created by Parker Denton
+    </footer>
+    <script src="script/script.js"></script>
 </body>
-</main>
 
-<footer>
-    Created By Parker Denton
-</footer>
+
+
 
 </html>
