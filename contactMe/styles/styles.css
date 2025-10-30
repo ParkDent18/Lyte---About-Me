@@ -1,28 +1,51 @@
-header,
-nav,
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 100%;
-    height: auto;
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+    background-color: #dcdcdc;
+    color: #443200;
 }
 
-body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0;
-    padding: 0;
+.div2 {
+    grid-column: span 4 / span 4;
+    background-color: #dcdcdc;
+    color: #443200;
 }
 
-main {
-    background-color: #00420D;
+.div3 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 2;
+    background-color: #dcdcdc;
+    color: #443200;
+}
+
+.div4 {
+    grid-column: span 5 / span 5;
+    grid-row: span 3 / span 3;
+    grid-row-start: 3;
+    background-color: #dcdcdc;
+    color: #443200;
+}
+
+.div5 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 6;
+    background-color: #dcdcdc;
+    color: #443200;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    flex: auto;
 }
 
 .contact-form {
-    background: white;
+    background: #8A9A5B;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px grey;
+    box-shadow: 0 4px 8px #244700;
     width: 500px;
 }
 
@@ -43,7 +66,7 @@ main {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid grey;
+    border: 1px solid #8A9A5B;
 }
 
 .contact-form input [type="color"],
@@ -52,14 +75,14 @@ main {
 }
 
 .btn-glow {
-    background: pink;
-    color: black;
+    background: #dcdcdc;
+    color: #443200;
     border-radius: 5px;
     transition: box-shadow 0.3s;
 }
 
 .btn-glow:hover {
-    box-shadow: 0 0 100px rgb(255, 75, 105)
+    box-shadow: 0 0 100px #8A9A5B
 }
 
 .inline-options {
